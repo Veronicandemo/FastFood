@@ -1,0 +1,264 @@
+/* 
+colors:#430f3f,#562752,#562756, #7b5779, #ece7ec, #c7b7c5, #ffffff
+greys: #858585, #242424, #0f0f0f,#0a0a0a
+
+font-size: 10,12,14,16,18,24,28,32,36,38,42,48,54,56,58,64,74,84,98,128
+border-radiud - 9px
+                11px
+                15px
+                100px
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+*:focus{
+    outline: none;
+    box-shadow: 0 0 0 5px rgb(199, 183, 197,0.5);
+}
+.landing-page,
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #ece7ec;
+    padding: 2% 0 2% 2%;
+
+}
+.navigation-bar ul{
+    display: flex;
+    gap: 3%;
+    color: #0f0f0f;
+    font-size: 1.2rem;
+    list-style: none;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+}
+a:hover,
+a:active{
+    color: #242424;
+}
+.log{
+    border: 2px solid #562756;
+    padding: 8px;
+    border-radius: 9px;
+}
+
+.navigation-bar li:nth-child(6){
+    margin-left: 5%;
+}
+.navigation-bar li:nth-child(2){
+    margin-left: auto;
+}
+.navigation-bar li:last-child{
+    margin-right: 2%;
+}
+.flex{
+    display: flex;
+    gap: 20%;
+    margin-top: 5%;
+    
+}
+.langing-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.icon,
+.icon-del{
+    font-size: 2.8rem;
+    font-family: 'Caveat', cursive;
+    color: #562756;
+}
+h1{
+    font-size: 5.4rem;
+    color: #0a0a0a;
+}
+h1 span{
+    color: #562756;
+    margin-right: 5%;
+    /* display: inline-block; */
+}
+.flex--2-cols{
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+}
+.ui-prifile{
+    margin: 2% 0 2% 15%;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+/* Log In Page */
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 10%;
+}
+form{
+
+    margin: auto;
+    margin-top: 5%;
+    max-width: 80vh;
+    max-height: 80vh;
+    background-color: #693f69c1;
+    padding: 2% 0 15% 2%;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #ece7ec;
+}
+form:hover{
+    box-shadow: 0 10px 30px #242424;
+
+}
+input{
+    border: none;
+    display: block;
+    padding: 2% 25% 2% 2%;
+    margin: 2%;
+    border-radius: 9px;
+}
+label{
+    text-transform: uppercase;
+    margin: 2%;
+}
+#remember{
+    display: inline;
+    margin-top: 8%;
+}
+.remember{
+    margin: 0;
+    text-transform: none;
+    font-size: inherit;
+}
+.btn-login{
+    display: block;
+    padding: 3% 8%;
+    margin: 5% 0 0 20%;
+    font-size: inherit;
+    font-weight: 700;
+    color:  #693f69c1;
+}
+.btn-login:active,
+.btn-login:hover{
+    background-color: #430f3f;
+    color: #ece7ec;
+}
+
+/* ***********MEALS SECTION*************** */
+.section_meals{
+    padding-bottom: 2%;
+}
+.sec-meals{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imgs/foods/bckfood.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    color: #ece7ec;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-meal{
+    color: #ece7ec;
+    width: 68px;
+    height: 68px;
+}
+.meals{
+    font-size: 1.2rem;
+    padding: 2% 0 2% 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 2%;
+}
+.amount,
+.meal-name,
+.add_to_cart{
+    margin-left: 10%;
+}
+.meal{
+    background-color: #ece7ec;
+    width: 80%;
+    height: 80%;
+    padding-bottom: 10%;
+    border-radius: 15px;
+}
+.meal:hover{
+    box-shadow: 0 20px  10px 0 #858585;
+
+}
+.food_img{
+    width: 100%;
+    height: 70%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.meals_heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+.amount{
+    color: #562756;
+    font-weight: 700;
+}
+
+.add_to_cart{
+    padding: 5% 8%;
+    border: none;
+    background-color:#562756;
+    color: #ece7ec;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.view-cart:hover,
+.add_to_cart:hover{
+    background-color:  #ff54f6;
+    color: #ece7ec;
+}
+.dinner-heading{
+    margin-top: 10%;
+}
+.cart_icon{
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    margin-left: 10px;
+}
+.view-cart{
+    background-color: #430f3f;
+    color: #ece7ec;
+    padding: 2% 7%;
+    border: none;
+    border-radius: 9px;
+    text-align: center;
+    margin-left: 38%;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
